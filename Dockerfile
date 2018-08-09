@@ -9,6 +9,6 @@ WORKDIR /data/my-vue
 ADD . /data/my-vue
 # RUN cp -r /node_modules /data/boxserver-web/node_modules
 # RUN npm update --registry=https://registry.npm.taobao.org
-RUN npm run dev
+ENTRYPOINT npm run dev
 
 #ENTRYPOINT pm2 start process.config.js --no-daemon
