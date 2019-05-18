@@ -13,13 +13,11 @@ export default {
     };
   },
   created () {
-    console.log('----------------');
+
     this.axios.get('/users')
       .then(res => {
-        console.log('----res', res);
       })
       .catch(err => {
-        console.log('------err', err);
       })
   }
 }
