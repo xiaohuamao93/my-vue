@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <div class="test"></div>
+    <div class="test">测试服务器链接</div>
   </div>
 </template>
 
