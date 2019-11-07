@@ -9,11 +9,10 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App 333333'
+      msg: 'Welcome to Your Vue.js App 33333322'
     };
   },
   created () {
-
     this.axios.get('/users')
       .then(res => {
       })
