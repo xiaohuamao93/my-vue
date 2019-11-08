@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <div class="test">测试服务器链接</div>
+    <div class="test">{{msg}}</div>
   </div>
 </template>
 
@@ -16,6 +16,7 @@ export default {
     this.axios.get('http://118.190.107.204:3000/users')
       .then(res => {
         console.log('----res', res);
+        this.mesg = res;
       })
       .catch(err => {
       })
@@ -42,6 +43,6 @@ a {
 .test {
   width: 7.5rem;
   height: 3rem;
-  background: red;
+  /*background: red;*/
 }
 </style>
