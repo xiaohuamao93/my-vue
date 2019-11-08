@@ -13,7 +13,7 @@ export default {
     };
   },
   created () {
-    this.axios.get('/users')
+    this.axios.get('http://118.190.107.204:3000/users')
       .then(res => {
       })
       .catch(err => {
